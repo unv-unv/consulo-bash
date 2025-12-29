@@ -19,6 +19,9 @@
 package com.ansorgit.plugins.bash.actions;
 
 import com.ansorgit.plugins.bash.util.BashIcons;
+import consulo.annotation.component.ActionImpl;
+import consulo.annotation.component.ActionParentRef;
+import consulo.annotation.component.ActionRef;
 import consulo.bash.localize.BashLocalize;
 import consulo.language.psi.PsiDirectory;
 import consulo.language.psi.PsiElement;
@@ -31,6 +34,7 @@ import consulo.localize.LocalizeValue;
  *
  * @author Joachim Ansorg
  */
+@ActionImpl(id = "Bash.NewBashScript", parents = @ActionParentRef(@ActionRef(id = "NewGroup")))
 public class NewBashFileAction extends NewBashActionBase {
     public NewBashFileAction() {
         super(BashLocalize.newfileMenuActionText(), BashLocalize.newfileMenuActionDescription(), BashIcons.BASH_FILE_ICON);

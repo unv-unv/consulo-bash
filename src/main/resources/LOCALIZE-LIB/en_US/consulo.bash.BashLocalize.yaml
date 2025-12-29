@@ -9,7 +9,7 @@ newfile.dialog.title:
 newfile.menu.action.description:
     text: Creates a new bash file
 newfile.menu.action.text:
-    text: Create bash file
+    text: Bash File
 parser.command.expected.command:
     text: Expected a command
 parser.heredoc.expectedEnd:
